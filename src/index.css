@@ -1,0 +1,54 @@
+@import './theme.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    @apply antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    background-color: var(--btn-primary-bg);
+    color: var(--btn-primary-text);
+    font-weight: var(--btn-font-weight);
+    padding: var(--btn-padding-y) var(--btn-padding-x);
+    border-radius: var(--btn-border-radius);
+    transition: all var(--transition-normal) ease;
+  }
+
+  .btn-primary:hover {
+    background-color: var(--btn-primary-bg-hover);
+  }
+
+  .btn-secondary {
+    border: 2px solid var(--btn-secondary-border);
+    color: var(--btn-secondary-text);
+    font-weight: var(--btn-font-weight);
+    padding: var(--btn-padding-y) var(--btn-padding-x);
+    border-radius: var(--btn-border-radius);
+    transition: all var(--transition-normal) ease;
+  }
+
+  .btn-secondary:hover {
+    background-color: var(--btn-secondary-bg-hover);
+    color: var(--btn-secondary-text-hover);
+  }
+
+  /* Brand name styling */
+  .brand-name {
+    font-family: var(--font-brand);
+  }
+}
