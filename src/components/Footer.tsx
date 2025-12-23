@@ -18,7 +18,7 @@ export default function Footer() {
             <p className="text-primary-700 italic mb-2">"We stitch your trust."</p>
             <p className="text-gray-600 mb-4 max-w-md">
               Leading manufacturer of high-quality uniforms for hospitality, healthcare,
-              corporate, and industrial sectors.
+              corporate, and industrial sectors in Guwahati, Assam and across North East India.
             </p>
             <div className="flex space-x-4">
               <a href="https://www.facebook.com/share/1ACxE7dxS7/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary-700 transition-colors">
@@ -88,8 +88,15 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-primary-200 mt-8 pt-8 text-center text-gray-600 text-sm">
-          <p>&copy; {new Date().getFullYear()} Vrindaban Uniforms. All rights reserved.</p>
+        {/* Regions Served - SEO */}
+        <div className="border-t border-primary-200 mt-8 pt-6">
+          <p className="text-center text-gray-500 text-sm mb-4">
+            Serving: Guwahati | Shillong | Imphal | Aizawl | Itanagar | Kohima | Agartala | Gangtok | All of Assam & North East India
+          </p>
+        </div>
+
+        <div className="border-t border-primary-200 pt-6 text-center text-gray-600 text-sm">
+          <p>&copy; {new Date().getFullYear()} Vrindaban Uniforms, Guwahati, Assam. All rights reserved.</p>
         </div>
       </div>
     </footer>
